@@ -14,6 +14,7 @@ The repo contains price triggger application for BTC.
 - The application uses google smtp serverto send emails. SMTP server string could be modified in **emailconf.py** file to change SMTP server.
 - The user needs to enable access in his/her gmail account to send emails. [Allow less secure apps to ON](https://myaccount.google.com/lesssecureapps)
 - Once a alert is triggered it can only trigger after 6 hrs. This is done to avoid multiple alerts if the price is fluctuaing near the trigger price.
+- The price fetch script runs every **5 seconds**.
 
 ## Running the application
 - Install all python packages in requirments.txt
@@ -24,6 +25,8 @@ The repo contains price triggger application for BTC.
 - The application should create a new key and ask for your gmail-id and password.
 - Enable less secure app in gmail from the following link: [Allow less secure apps to ON](https://myaccount.google.com/lesssecureapps)
 
+# Running rqworker
+![image](https://i.ibb.co/7nPLhLh/image.png)
 ## API
 
 | API | ACCESSLINK | TYPE |PARAMETERS|
