@@ -47,11 +47,11 @@ def email_user(data):
     email, text = data
     log(email)
     log(text)
-    # server.sendmail(sender_email, email, str(text))
+    server.sendmail(sender_email, email, str(text))
     
 
 sender_email, password = configure_email()
-# server = emailconf.init(sender_email, password)
+server = emailconf.init(sender_email, password)
 
 
 def get_data():
